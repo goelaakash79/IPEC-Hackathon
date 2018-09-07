@@ -1,0 +1,51 @@
+.parallax {
+    background-image: url("file:///home/ashutosh/Downloads/book-stack-books-bookshop-264635.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+/* .parallax1 {
+    background-image: url("file:///home/ashutosh/Downloads/book-stack-books-bookshop-264635.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+
+.para{
+    height:100px;
+    background-color:rgb(255, 255, 255);
+    font-size:36px;
+    
+}
+
+
+.para1{
+    height:200px;
+    background-color:whitesmoke;
+    font-size:36px
+}
+
+/* .para h3{
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-family: Rokkitt, Georgia, serif;
+} */
+
+img {
+          height: 200px;
+          width:200px;
+          padding: 16px;
+          max-width: 200px;
+          border-radius: 70%;
+            }
+
