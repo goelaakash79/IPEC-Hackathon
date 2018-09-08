@@ -25,16 +25,16 @@
     <div class="row col-lg-12">
       <div class="col-lg-3">
         <div class="card" style="">
-          <img class="card-img-top image-book" src="https://images-na.ssl-images-amazon.com/images/I/91AWmg7WVKL.jpg" alt="Card image cap">
+          <img class="card-img-top image-book" src="<%= image %>" alt="Card image cap">
         </div>
       </div>
 
       <div class="col-lg-9">
         <div class="card">
-          <h2 class="card-title" style="padding-left: 16px; padding-top:16px;"><strong>Zero to One</strong></h2>
+          <h2 class="card-title" style="padding-left: 16px; padding-top:16px;"><strong><%= title %></strong></h2>
           <hr>
           <div class="card-body">
-            <p class="card-text">Draws on more than forty interviews with Steve Jobs, as well as interviews with family members, friends, competitors, and colleagues to offer a look at the co-founder and leading creative force behind the Apple computer company</p>
+            <p class="card-text"><%= desc %></p>
 
             <table class="table">
               <thead>
@@ -50,11 +50,11 @@
               <tbody>
                 <tr>
                   <th scope="row"></th>
-                  <td>Mark</td>
-                  <td>Otto</td>
+                  <td><%= publisher %></td>
+                  <td><%= authors %></td>
                   <td>ISBN20159X</td>
-                  <td>630</td>
-                  <td>Motivation and Startups</td>
+                  <td><%= pages %></td>
+                  <td><%= category %></td>
                 </tr>
               </tbody>
             </table>

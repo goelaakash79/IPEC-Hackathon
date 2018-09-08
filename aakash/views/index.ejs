@@ -50,7 +50,7 @@
     <div class="col-sm-9 row">
       <% data['recommended_books'].forEach(function(book){ %>
       <div class="col-sm-4">
-        <a class="card" href="/booktique/information">
+        <a class="card" href="/booktique/information/<%= book['ISBN'] %>">
           <img class="card-img-top kiet" src="<%= book['ImageURL'] %>" style="max-height: 280px;" alt="">
           <p class="card-title">
             <center class="kiet-title"><span><strong><%= book['BookTitle'] %></strong></span></center>
