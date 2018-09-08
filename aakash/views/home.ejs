@@ -1,0 +1,487 @@
+<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
+
+<style>
+*{
+  font-family: Comfortaa
+}
+
+/* GENERAL STYLING */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font: normal 16px Comfortaa;
+  color: #555;
+}
+
+ul, nav{
+  list-style: none;
+}
+
+a{
+  color: #fff;
+  text-decoration: none!important;
+  opacity: 0.75;
+}
+
+a:hover{
+  opacity: 1;
+  color: #000;
+  text-decoration: underline;
+}
+
+a.btn{
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  background-color: #3f51b5;
+  opacity: 1;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 80px;
+  justify-content: center;
+}
+
+section:not(.mainbody):nth-child(even){
+  background-color: #f5f5f5;
+}
+
+.grid{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+hr{
+  width: 250px;
+  height: 3px;
+  background-color: #3f51b5;
+  border: 0;
+  margin-bottom: 50px;
+}
+
+section h3.title{
+  text-transform: capitalize;
+  font: 700 32px Comfortaa;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+section p{
+  max-width: 775px;
+  line-height: 2;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* HEADER STYLING */
+
+header{
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 100px 0;
+  animation: 1s fadein 0.5s forwards;
+  opacity: 0;
+}
+
+@keyframes fadein {
+  100%{
+    opacity: 1;
+  }
+}
+
+header h2{
+  font-family: Comfortaa;
+}
+
+header nav{
+  display: flex;
+  margin-right: -15px;
+}
+
+header nav li{
+  margin: 0 15px;
+}
+
+/* mainbody styling */
+
+.mainbody{
+  color: #fff;
+  /* position: relative; */
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.mainbody .background-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+  background-color: #80a3db;
+}
+
+.job-content .background-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+  background-image: url('https://images.pexels.com/photos/132650/pexels-photo-132650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  opacity: 0.7;
+}
+
+.mainbody h1{
+  font: 700 60px Comfortaa;
+  margin-bottom: 15px;
+}
+
+.mainbody h3{
+  font: 400 28px Comfortaa;
+  margin-bottom: 40px;
+}
+
+.mainbody a.btn{
+  padding: 20px 46px;
+}
+
+.mainbody-content-area{
+  opacity: 0;
+  margin-top: 100px;
+  animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade {
+  100%{
+    opacity: 1;
+    margin: 0;
+  }
+}
+
+/* about section */
+
+.about .grid li{
+  height: 350px;
+  padding: 20px;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+}
+
+.about .grid li.small{
+  flex-basis: 30%;
+}
+
+.about .grid li.large{
+  flex-basis: 70%;
+}
+
+/* features grid */
+
+.features .grid li{
+  padding: 50px;
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.features .grid li i{
+  color: #8c9eff;
+}
+
+.features .grid li h4{
+  font-size: 30px;
+  margin: 25px 0;
+}
+
+/* testimonials section */
+
+.testimonials .quote{
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 40px 0 25px;
+}
+
+/* footer section */
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(20,20,20);
+  color: #fff;
+  padding: 8px 0;
+}
+
+footer ul{
+  display: flex;
+}
+
+footer ul li{
+  margin-left: 16px;
+}
+
+footer p{
+  /* text-transform: uppercase; */
+  font-size: 14px;
+  opacity: 0.6;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  align-self: center;
+}
+
+#contact{
+   padding:10px 0 10px;
+ }
+
+ .contact-text{
+   margin:45px auto;
+ }
+
+ .mail-message-area{
+   width:100%;
+   padding:0 15px;
+ }
+
+ .mail-message{
+   width: 100%;
+   background:rgba(255,255,255, 0.8) !important;
+   -webkit-transition: all 0.7s;
+   -moz-transition: all 0.7s;
+   transition: all 0.7s;
+   margin:0 auto;
+   border-radius: 0;
+ }
+
+ .not-visible-message{
+   height:0px;
+   opacity: 0;
+ }
+
+ .visible-message{
+   height:auto;
+   opacity: 1;
+   margin:25px auto 0;
+ }
+
+/* Input Styles */
+
+ .form{
+   width: 100%;
+   padding: 15px;
+   background:#f8f8f8;
+   border:1px solid rgba(0, 0, 0, 0.075);
+   margin-bottom:25px;
+   color:#727272 !important;
+   font-size:13px;
+   -webkit-transition: all 0.4s;
+   -moz-transition: all 0.4s;
+   transition: all 0.4s;
+ }
+
+ .form:hover{
+   border:1px solid #8BC3A3;
+ }
+
+ .form:focus{
+   color: white;
+   outline: none;
+   border:1px solid #8BC3A3;
+ }
+
+ .textarea{
+   height: 200px;
+   max-height: 200px;
+   max-width: 100%;
+ }
+
+/* Generic Button Styles */
+
+ .button{
+   padding:8px 12px;
+   background:#0A5175;
+   display: block;
+   width:120px;
+   margin:10px 0 0px 0;
+   border-radius:3px;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   transition: all 0.3s;
+   text-align:center;
+   font-size:0.8em;
+   box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+   -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+   -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+ }
+
+ .button:hover{
+   background:#8BC3A3;
+   color:white;
+ }
+
+/* Send Button Styles */
+
+ .form-btn{
+   width:180px;
+   display: block;
+   height: auto;
+   padding:15px;
+   color:#fff;
+   background:#8BC3A3;
+   border:none;
+   border-radius:3px;
+   outline: none;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   transition: all 0.3s;
+   margin:auto;
+   box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+   -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+   -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+ }
+
+ .form-btn:hover{
+   background:#111;
+   color: white;
+   border:none;
+ }
+
+ .form-btn:active{
+   opacity: 0.9;
+ }
+center{
+ margin-top:330px;
+}
+input {
+   position: relative;
+   z-index: 9999;
+}
+.parallax {
+  background-image: url("https://images.pexels.com/photos/694740/pexels-photo-694740.jpeg");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>
+
+<script>
+  var i = 0;
+  var txt = 'The true university these days is a collection of books';
+  var speed = 50;
+
+  window.onload = function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("aakash").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+</script>
+
+  <header>
+    <h2><a href="#"><img src="images/book.png" style="width:96px; background:rgb(10,10,210); border-radius:50%; padding:4px;"></a></h2>
+    <nav style="font-size: 16px;">
+      <li><a style="font-size: 16px; opacity: 1; border-bottom: 2px solid blue; padding-bottom: 4px;" href="#">Home</a></li>
+      <li><a style="font-size: 16px; opacity: 1; border-bottom: 2px solid blue; padding-bottom: 4px;" href="#about">About</a></li>
+      <li><a style="font-size: 16px; opacity: 1; border-bottom: 2px solid blue; padding-bottom: 4px;" href="#features">Features</a></li>
+      <li><a style="font-size: 16px; opacity: 1; border-bottom: 2px solid blue; padding-bottom: 4px;" href="#contact">Contact</a></li>
+    </nav>
+  </header>
+
+  <section class="mainbody">
+    <div class="background-image" style="background-image: url('https://images.pexels.com/photos/132650/pexels-photo-132650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); opacity: 0.7;"></div>
+    <div style="padding-top:64px!important;" class="mainbody-content-area">
+      <h2 style="font-size:3em; font-family:Comfortaa!important;">BookTique</h2>
+      <br>
+      <img src="images/book.png" style="width:124px; background:rgb(10,10,210); border-radius:50%; padding:6px;">
+      <p id="aakash" style="font-size: 20px;"></p>
+      <a href="/booktique/login" class="btn btn-success">Login</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h3 class="title" style="text-transform: uppercase;">About Us</h3>
+    <p>The founders of the website are from BITS Pilani and took up the challenging of bringing all the research internships to one platform. Using our platform you can directly reach proffessors and reputed institutions for research internship.
+      <br><br> If you're experiencing issues and have concerns about this research internship portal, or want to meet other people in the community who share the same interests with you please send us a message.</p>
+    <hr>
+    <ul class="grid parallax">
+    </ul>
+  </section>
+
+  <section class="features" id="features">
+    <h3 class="title" style="text-transform: uppercase;">Features</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <hr>
+    <ul class="grid">
+      <li>
+        <img src="images/certificate.png" style="height: 120px;" alt="">
+
+        <h4>Certified Internships</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat obcaecati illum sed nihil sint, et eius nulla quibusdam modi.</p>
+      </li>
+
+      <li>
+        <img src="images/cash.png" style="height: 120px;" alt="">
+
+        <h4>Paid Internships</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sequi alias illum id, consequatur, voluptatem!</p>
+      </li>
+
+      <li>
+        <img src="images/skills.png" style="height: 120px;" alt="">
+
+        <h4>Skill Development</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni laboriosam qui sed autem quod accusantium odio.</p>
+      </li>
+
+      <li>
+        <img src="images/group.png" style="height: 120px;" alt="">
+
+        <h4>Industry Connect</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut officiis magni, consequatur numquam vel!</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="testimonials">
+    <h3 class="title" style="text-transform: uppercase;">Our Collaborations</h3>
+    <hr>
+    <marquee behavior="" direction="left">
+      <img src="http://www.eupp.in/Images/schoollogo.png" alt="" style="width:96px; background:rgb(25,180,98); border-radius:50%; padding:16px; margin-right:48px;">
+      <img src="https://www.akgec.in/sites/default/files/AKGEC_1_0.png" alt="" style="width:96px; background:rgb(25,90,198); border-radius:50%; padding:16px; margin-right:48px;">
+      <img src="http://www.ipec.org.in/ncrteee-2018/assets/images/logo.png" alt="" style="width:96px; background:rgb(25,255,108); border-radius:50%; padding:16px; margin-right:48px;">
+      <img src="http://web.iitd.ac.in/~ashokpatel/index_files/image004.png" alt="" style="width:96px; background:rgb(220,205,228); border-radius:50%; padding:16px; margin-right:48px;">
+      <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple115/v4/2e/a5/bc/2ea5bc02-76f5-56b0-e3b7-eac07c13f54b/AppIcon-1x_U007emarketing-85-220-0-9.png/246x0w.jpg" alt="" style="width:96px; background:rgb(208,208,208); border-radius:50%; padding:16px; margin-right:48px;">
+      <img src="https://www.kiet.edu/images/logo/erp_logo.png" alt="" style="width:96px; background:rgb(5,50,55); border-radius:50%; padding:16px;">
+    </marquee>
+  </section>
+
+  <footer>
+    <p style="color: white; opacity: 1;">Pro Noobs Copyright © 2018 All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>

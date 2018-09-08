@@ -1,10 +1,10 @@
 @font-face {
-  font-family: Ubuntu-Regular;
-  src: url('../fonts/ubuntu/Ubuntu-Regular.ttf');
+  font-family: Comfortaa;
+  /* src: url('../fonts/ubuntu/Comfortaa.ttf'); */
 }
 @font-face {
-  font-family: Ubuntu-Bold;
-  src: url('../fonts/ubuntu/Ubuntu-Bold.ttf');
+  font-family: Comfortaa;
+  /* src: url('../fonts/ubuntu/Comfortaa.ttf'); */
 }
 * {
 	margin: 0px;
@@ -14,11 +14,11 @@
 
 body, html {
 	height: 100%;
-	font-family: Ubuntu-Regular, sans-serif;
+	font-family: Comfortaa, sans-serif;
 }
 
 a {
-	font-family: Ubuntu-Regular;
+	font-family: Comfortaa;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -83,7 +83,7 @@ button:hover {
 }
 
 .login100-form-title {
-  font-family: Ubuntu-Bold;
+  font-family: Comfortaa;
   font-size: 30px;
   color: #403866;
   line-height: 1.2;
@@ -102,7 +102,7 @@ button:hover {
 }
 
 .input100 {
-  font-family: Ubuntu-Bold;
+  font-family: Comfortaa;
   color: #403866;
   line-height: 1.2;
   font-size: 18px;
@@ -134,7 +134,7 @@ button:hover {
 }
 
 .login100-form-btn {
-  font-family: Ubuntu-Bold;
+  font-family: Comfortaa;
   font-size: 16px;
   color: #fff;
   line-height: 1.2;

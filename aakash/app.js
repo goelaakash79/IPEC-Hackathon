@@ -16,6 +16,10 @@ app.use(bodyParser.urlencoded({extended:false}));
 
 app.use('/booktique', booktique);
 
+app.get('/', function(req, res){
+  res.render('home');
+});
+
 const port = 3000 || process.env.PORT;
 app.listen(port, function(){
   console.log("Server running at port " + port);
