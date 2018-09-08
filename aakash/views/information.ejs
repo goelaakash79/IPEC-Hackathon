@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<% include partials/header %>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
   <style>
     .image-book{
       width: 220px;
@@ -17,9 +8,23 @@
       align-self: center;
     }
   </style>
-</head>
 
-<body>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-full" style="background-color: #403866; border-radius: 0px!important;">
+    <a class="" href="#">
+        <img src="/images/book.png" width="40" height="40" alt="">
+      </a>
+    <a class="navbar-brand" href="#">Booktique</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navs navbar-nav navbar-right">
+        <li class="nav-item"><a class="nav-link" style="font-size: 16px!important; color:#fff;" href="/booktique/login">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
   <br><br>
   <div class="container">
     <div class="row col-lg-12">
@@ -64,6 +69,5 @@
       </div>
     </div>
   </div>
-</body>
 
-</html>
+<% include partials/footer %>
