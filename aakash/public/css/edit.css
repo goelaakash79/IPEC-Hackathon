@@ -21,9 +21,9 @@
 
 .input102 {
   color: #403866;
-  line-height: 1.2;
+  /* line-height: 0.1; */
   font-size: 18px;
-  padding: 16px;
+  padding: 0 16px;
   text-align: center;
   display: block;
   width: 100%;
