@@ -1,0 +1,103 @@
+<% include partials/header %>
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-full" style="background-color: #403866; border-radius: 0px!important;">
+  <a class="" href="#">
+      <img src="/images/book.png" width="40" height="40" alt="">
+    </a>
+  <a class="navbar-brand" href="#">Booktique</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navs navbar-nav navbar-right">
+      <li class="nav-item"><a class="nav-link" style="font-size: 16px!important; color:#fff;" href="/">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div style="overflow:hidden; margin:0 40px;">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="card">
+        <p class="input102">Welcome <strong><%= data['name'] %></strong></p>
+        <center>
+          <div id="crop">
+            <img class="card-img-top" src="/images/man.png" alt="Card image cap">
+          </div>
+        </center>
+        <div class="card-body" style="background-color: rgba(0,0,0,0.1);">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input101" id="inputGroup-sizing-default">Library ID: <strong><%= data['user_id'] %></strong></span>
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input101" id="inputGroup-sizing-default">Address: <strong><%= data['address'] %></strong></span>
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input101" id="inputGroup-sizing-default">Expiry Date: <strong><%= data['expiry_date'] %></strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-9 row">
+      <% data['recommended_books'].forEach(function(book){ %>
+      <div class="col-sm-4">
+        <a class="card" href="/booktique/information">
+          <img class="card-img-top kiet" src="<%= book['ImageURL'] %>" style="max-height: 280px;" alt="">
+          <p class="card-title">
+            <center class="kiet-title"><span><strong><%= book['BookTitle'] %></strong></span></center>
+          </p>
+          <div class="card-body">
+            <p class="card-text kiet-text">
+              <span>Publisher: <strong><%= book['Publisher'] %></strong></span>
+              <br>
+              <span>
+                <span>ISBN No.: <%= book['ISBN'] %></span>
+              <span style="float:right;">Year:  <%= book['YearOfPublication'] %></span>
+              </span>
+            </p>
+          </div>
+        </a>
+        <br>
+      </div>
+      <% }); %>
+    </div>
+
+    <div class="col-sm-9 row">
+      <% data['history'].forEach(function(book){ %>
+      <div class="col-sm-4">
+        <div class="card">
+          <img class="card-img-top" src="<%= book['ImageURL'] %>" style="max-height: 280px;" alt="">
+          <p class="card-title">
+            <center><span><strong><%= book['BookTitle'] %></strong></span></center>
+          </p>
+          <div class="card-body">
+            <p class="card-text">
+              <span>Publisher: <strong><%= book['Publisher'] %></strong></span>
+              <br>
+              <span>
+                <span>ISBN No.:  <%= book['ISBN'] %></span>
+              <span style="float:right;">Year:  <%= book['YearOfPublication'] %></span>
+              </span>
+            </p>
+          </div>
+        </div>
+        <br>
+      </div>
+      <% }); %>
+    </div>
+
+
+    </div>
+  </div>
+</div>
+
+<% include partials/footer %>
