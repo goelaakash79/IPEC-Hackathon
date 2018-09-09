@@ -64,7 +64,7 @@ router.get('/information/:id', function(req,res){
 
 
 // router.get('/xyz', function(req, res){
-//   User.create([], function(err, profile){
+//   Profile.create([], function(err, profile){
 //     if(!err)
 //       res.send({msg:"ok"});
 //     console.log(err);
